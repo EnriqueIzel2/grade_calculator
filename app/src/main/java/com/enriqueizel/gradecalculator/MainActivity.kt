@@ -23,11 +23,15 @@ class MainActivity : AppCompatActivity() {
       val meanNotes = (note1 + note2 + note3 + note4) / 4
 
       if (meanNotes >= 6 && absences <= 20) {
-        textResult.setText("Aluno Aprovado\n Média $meanNotes")
+        textResult.setText("Aluno aprovado\n Média $meanNotes")
         textResult.setTextColor(getColor(R.color.green))
         clearFields()
-      } else {
-        textResult.setText("Aluno Reprovado\n Média $meanNotes\n Faltas $absences ")
+      } else if(meanNotes < 6) {
+        textResult.setText("Aluno reprovado por nota\n Média $meanNotes")
+        textResult.setTextColor(getColor(R.color.red))
+        clearFields()
+      } else if (absences > 20){
+        textResult.setText("Aluno reprovado por faltas\n Faltas $absences")
         textResult.setTextColor(getColor(R.color.red))
         clearFields()
       }
