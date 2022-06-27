@@ -18,7 +18,8 @@
         android:inputType="numberDecimal"
         android:maxLength="3"
         android:padding="20dp"
-        android:text="" />
+        android:text=""
+        android:textAlignment="center" />
 
     <EditText
         android:id="@+id/school_grade2"
@@ -32,7 +33,8 @@
         android:inputType="numberDecimal"
         android:maxLength="3"
         android:padding="20dp"
-        android:text="" />
+        android:text=""
+        android:textAlignment="center" />
 
     <EditText
         android:id="@+id/school_grade3"
@@ -46,7 +48,8 @@
         android:inputType="numberDecimal"
         android:maxLength="3"
         android:padding="20dp"
-        android:text="" />
+        android:text=""
+        android:textAlignment="center" />
 
     <EditText
         android:id="@+id/school_grade4"
@@ -61,7 +64,8 @@
         android:inputType="numberDecimal"
         android:maxLength="4"
         android:padding="20dp"
-        android:text="" />
+        android:text=""
+        android:textAlignment="center" />
 
     <EditText
         android:id="@+id/absences"
@@ -75,7 +79,8 @@
         android:inputType="numberDecimal"
         android:maxLength="3"
         android:padding="20dp"
-        android:text="" />
+        android:text=""
+        android:textAlignment="center" />
 
     <Button
         android:id="@+id/btn_calculate"
