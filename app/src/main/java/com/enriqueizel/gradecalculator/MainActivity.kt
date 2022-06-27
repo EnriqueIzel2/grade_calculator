@@ -18,8 +18,17 @@ class MainActivity : AppCompatActivity() {
       val note3 = binding.schoolGrade3.text.toString().toDouble()
       val note4 = binding.schoolGrade4.text.toString().toDouble()
       val absences = binding.absences.text.toString().toInt()
+      val textResult = binding.textResult
 
       val meanNotes = (note1 + note2 + note3 + note4) / 4
+
+      if (meanNotes >= 6 && absences <= 20) {
+        textResult.setText("Aluno Aprovado \n Média $meanNotes")
+        textResult.setTextColor(getColor(R.color.green))
+      } else {
+        textResult.setText("Aluno Reprovado \n Média $meanNotes \n Faltas $absences ")
+        textResult.setTextColor(getColor(R.color.red))
+      }
     }
   }
 }
