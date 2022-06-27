@@ -1,7 +1,8 @@
 <h1 align="center">Grade Calculator</h1>
 
 <p align="center">
-Calculadora que verifica se o aluno foi aprovado ou não.
+Calculadora que verifica se o aluno foi aprovado ou não. <br/>
+O aluno deve ter média igual ou maior do que seis, e não pode ter mais do que 20 faltas, mesmo se obter média maior do que seis, será reprovado se tiver mais do que 20 faltas.
 </p>
 
 ---
