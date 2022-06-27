@@ -67,5 +67,19 @@
         android:padding="20dp"
         android:text="" />
 
+    <Button
+        android:id="@+id/btn_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/absences"
+        android:layout_margin="30dp"
+        android:backgroundTint="@color/dark_gray"
+        android:padding="20dp"
+        android:text="Calcular"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
 
 </RelativeLayout>
